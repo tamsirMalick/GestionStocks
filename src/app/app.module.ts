@@ -10,7 +10,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ContentComponent } from './content/content.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppRoutingModule } from './app.routing.module';
+<<<<<<< HEAD
 
+=======
+>>>>>>> 136be673ad9ed5d54a5ada14271d01b00a09d20b
 
 @NgModule({
   declarations: [
@@ -23,8 +26,12 @@ import { AppRoutingModule } from './app.routing.module';
   ],
   imports: [
     BrowserModule,
+<<<<<<< HEAD
     AppRoutingModule,
     ReactiveFormsModule
+=======
+    AppRoutingModule
+>>>>>>> 136be673ad9ed5d54a5ada14271d01b00a09d20b
   ],
   providers: [ProduitMockService],
   bootstrap: [AppComponent]
