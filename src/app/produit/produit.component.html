@@ -31,26 +31,6 @@
                 </div>
 
                 <div class="card-body">
-<<<<<<< HEAD
-                    <form [formGroup] = "produitForm">
-                        <div class="form-group">
-                            <label>Référence</label>
-                            <input type= "text" class="form-control" formControlName = "ref" />
-                        </div>
-                        <div class="alert alert-danger" *ngIf = "produitForm.controls['ref'].invalid && (produitForm.controls['ref'].touched || produitForm.controls['ref'].dirty)">
-                           * La référence est obligatoire
-                        </div>
-                        <div class="form-group">
-                            <label>Quantité</label>
-                            <input type="number" class="form-control" formControlName = "quantite" />
-                        </div>
-                        <div class="form-group">
-                            <label>Prix Unitaire</label>
-                            <input type = "number" class="form-control" formControlName = "prixUnitaire"/>
-                        </div>
-                        <button class="btn btn-success" [disabled] = "produitForm.pristine || produitForm.invalid">Ajouter</button>
-                    </form>
-=======
                     <div *ngIf = "operation == 'add' || operation == 'edit'">
                         <form [formGroup] = "produitForm">
                             <div class="form-group">
@@ -83,7 +63,6 @@
                         <button class="btn btn-success" [disabled] = "!produitSelected.ref" (click)= "deleteProduit()">Confirmer</button>
 
                     </div>
->>>>>>> crud_produit
                 </div>
 
                 <div class="card-footer">

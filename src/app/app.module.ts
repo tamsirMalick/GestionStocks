@@ -11,14 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ContentComponent } from './content/content.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppRoutingModule } from './app.routing.module';
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 136be673ad9ed5d54a5ada14271d01b00a09d20b
-=======
 import { ProduitService } from './produit/produit.service';
->>>>>>> crud_produit
 
 @NgModule({
   declarations: [
@@ -32,18 +25,10 @@ import { ProduitService } from './produit/produit.service';
   ],
   imports: [
     BrowserModule,
-<<<<<<< HEAD
+    ReactiveFormsModule,
     AppRoutingModule,
-<<<<<<< HEAD
-    ReactiveFormsModule
-=======
-    AppRoutingModule
->>>>>>> 136be673ad9ed5d54a5ada14271d01b00a09d20b
-=======
     ReactiveFormsModule,
     HttpClientModule
-
->>>>>>> crud_produit
   ],
   providers: [ProduitMockService, ProduitService],
   bootstrap: [AppComponent]
