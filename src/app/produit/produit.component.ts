@@ -20,10 +20,10 @@ export class ProduitComponent implements OnInit {
     produitSelected: Produit;
 
     constructor(private produitService: ProduitService, private formBuilder: FormBuilder, private route: ActivatedRoute) {
-        this.createForm();
+        this.createEmptyForm();
     }
     
-    createForm() {
+    createEmptyForm() {
         this.produitForm = this.formBuilder.group({
             ref: ['', Validators.required],
             quantite: '',
@@ -64,7 +64,7 @@ export class ProduitComponent implements OnInit {
     }
 
     deleteProduit() {
-        this.produitService.deleteProduit(this.produitSelected.ref).subscribe(
+        this.produitService.deleteProduit(this.produitSelected.id).subscribe(
             res => {
                 this.produitSelected = new Produit();
                 this.loadProduits();
@@ -74,7 +74,7 @@ export class ProduitComponent implements OnInit {
 
     initProduit() {
         this.produitSelected = new Produit();
-        this.createForm();
-    }
+        this.createEmptyForm();
+     }
 
 }

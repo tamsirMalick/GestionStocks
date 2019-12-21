@@ -6,7 +6,8 @@ import { ProduitResolver } from './produit/produit.resolver';
 
 export const appRoutes: Routes = [
     {
-        path: 'produit', component: ProduitComponent,
+        path: 'produit',
+        component: ProduitComponent,
         resolve: {
             produits : ProduitResolver
         }

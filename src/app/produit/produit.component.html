@@ -37,9 +37,9 @@
                                 <label>Référence</label>
                                 <input type= "text" class="form-control" formControlName = "ref" [(ngModel)] = 'produitSelected.ref'/>
                             </div>
-                            <div class="alert alert-danger" *ngIf = "produitForm.controls['ref'].invalid && (produitForm.controls['ref'].touched || produitForm.controls['ref'].dirty)">
+                            <p class="alert alert-danger" *ngIf = "produitForm.controls['ref'].invalid && (produitForm.controls['ref'].touched || produitForm.controls['ref'].dirty)">
                                * La référence est obligatoire
-                            </div>
+                            </p>
                             <div class="form-group">
                                 <label>Quantité</label>
                                 <input type="number" class="form-control" formControlName = "quantite" [(ngModel)]= 'produitSelected.quantite'/>
