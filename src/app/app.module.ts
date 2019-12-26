@@ -32,7 +32,9 @@ import { AppService } from './app.service';
     ReactiveFormsModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [ProduitMockService, ProduitService, AppService],
   bootstrap: [AppComponent]
